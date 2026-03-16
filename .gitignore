@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+checkpoints/
+*.pt
+*.pth
+synthetic_data.csv
+evaluation_results.json
+.DS_Store

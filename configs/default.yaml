@@ -1,0 +1,36 @@
+# Default configuration for product manifold flow matching
+
+# Model architecture
+model:
+  hidden_dim: 256
+  n_layers: 5
+  alpha: 0.3  # Einstein midpoint aggregation strength
+
+# Training
+training:
+  n_epochs: 100
+  batch_size: 256
+  lr: 0.001
+  patience: 10
+  n_seeds: 5
+
+# ODE solver for generation
+generation:
+  method: dopri5
+  atol: 1.0e-5
+  rtol: 1.0e-5
+
+# Dependency graph
+dependency:
+  threshold: 0.1  # tau for edge sparsity
+
+# Data
+data:
+  test_ratio: 0.2
+  smoothing_eps: 0.01  # label smoothing for categorical encoding
+
+# Evaluation
+evaluation:
+  dcr_threshold: 0.1
+  mia_n_shadow: 10
+  mia_hidden_units: 128
