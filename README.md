@@ -101,17 +101,6 @@ Key hyperparameters in `configs/default.yaml`:
 | `generation.method` | dopri5 | ODE solver (dopri5 / euler / rk4) |
 | `dependency.threshold` | 0.1 | Edge sparsity threshold for dependency graph |
 
-## Citation
-
-```bibtex
-@article{chen2025product,
-  title={Product Manifold Flow Matching for Mixed-Type Tabular Data Generation},
-  author={Chen, Shikun and Xiong, Songquan},
-  journal={Neural Networks},
-  year={2025}
-}
-```
-
 ## License
 
 MIT
